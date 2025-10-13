@@ -23,13 +23,30 @@
 </nav>
 
 <div class="main-content">
-<h1>Välkommen till Albert Topallajs Portfolio</h1>
-<p>Här kan du utforska mina projekt och erfarenheter inom webbutveckling.</p>
-<p>Jag är en passionerad utvecklare inom Java, HTML, CSS, och JavaScript.</p>
-<p>Jag utvecklar ständigt mina programmeringskunskaper genom att utforska och lära mig nya intressanta och moderna tekniker</p>
-<p>Backend utveckling är något jag vill lära mig mer inom, därav är Spring Boot näst på tur att lära sig</p>
-<p>Just nu läser jag en YH-utbildning inom Javautvecklare, läs mer i <a class="contact" href="utbildning.html">Utbildning</a></p>
-<p>Om du är intresserad av att samarbeta eller har några frågor, tveka inte att <a href="kontakt.html" class="contact">kontakta mig</a>.</p>
+<h2 class="headerMessage">Kontakta utvecklare Albert Topallaj</h2>
+
+<p class="textMessage">Du får gärna skriva i meddelandet om du kommer från ett särskilt företag eller myndighet</p>
+<p class="textMessage">Alla frågor är varmt välkomna!</p>
+
+<textarea class="sendMessageTextArea" id="message" rows="10" placeholder="Skriv ditt meddelande här..."></textarea>
+<button class="btnSendMessage" id="sendBtn">Skicka</button>
+
+<script>
+document.getElementById('sendBtn').addEventListener('click', () => {
+  const message = encodeURIComponent(document.getElementById('message').value.trim());
+  
+  if (!message) {
+    alert("⚠️ Skriv ett meddelande innan du skickar!");
+    return;
+  }
+
+  const mailto = `mailto:altopallaj21@gmail.com?subject=Meddelande%20från%20portfolio&body=${message}`;
+  window.location.href = mailto;
+});
+</script>
+
+
+
 </div>
     
 <footer>
