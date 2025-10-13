@@ -27,23 +27,7 @@
 <p class="textMessage">Alla frågor är varmt välkomna!</p>
 
 <textarea class="sendMessageTextArea" id="message" rows="10" placeholder="Skriv ditt meddelande här..."></textarea>
-<button class="btnSendMessage" id="sendBtn">Skicka</button>
-
-<script>
-document.getElementById('sendBtn').addEventListener('click', () => {
-  const message = encodeURIComponent(document.getElementById('message').value.trim());
-  
-  if (!message) {
-    alert("⚠️ Skriv ett meddelande innan du skickar!");
-    return;
-  }
-
-  const mailto = `mailto:altopallaj21@gmail.com?subject=Meddelande%20från%20portfolio&body=${message}`;
-  window.location.href = mailto;
-});
-</script>
-
-
+<a href="mailto:altopallaj21@gmail.com" class="btnSendMessage">Skicka meddelande</a>
 
 </div>
     
