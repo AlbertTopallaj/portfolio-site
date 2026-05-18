@@ -44,4 +44,9 @@ footer {
         width: 20rem;
         padding: 1.5rem;
     }
+    
+    .renovate-container p,
+    .name-header {
+        font-size: 13px;
+    }
 }
