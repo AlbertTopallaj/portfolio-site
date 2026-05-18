@@ -23,6 +23,10 @@ body {
     width: 25rem;
 }
 
+.renovate-container i {
+    margin-bottom: 0.5rem;
+}
+
 .name-header {
     font-weight: 400;
 }
@@ -44,7 +48,7 @@ footer {
         width: 20rem;
         padding: 1.5rem;
     }
-    
+
     .renovate-container p,
     .name-header {
         font-size: 13px;
