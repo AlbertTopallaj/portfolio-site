@@ -1,3 +1,40 @@
 body {
-    
+    background-color: #eeecea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: #2c2c3a;
+    font-family: 'Inter', sans-serif;
 }
+
+.renovate-container {
+    background-color: #f5a652;
+    border: 1px solid #e8953f;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 25rem;
+    width: 25rem;
+    animation: float 2s ease-in-out 0.3s infinite;
+}
+
+.name-header {
+    font-weight: 400;
+}
+
+.linkedin {
+    color: #0a66c2;
+}
+
+@keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+}
+
