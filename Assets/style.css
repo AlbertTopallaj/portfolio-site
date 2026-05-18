@@ -38,3 +38,11 @@ footer {
     font-size: 12px;
     color: #9090a0;
 }
+
+@media (max-width: 480px) {
+    .renovate-container {
+        height: 20rem;
+        width: 20rem;
+        padding: 1.5rem;
+    }
+}
