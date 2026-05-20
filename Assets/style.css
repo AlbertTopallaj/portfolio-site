@@ -38,6 +38,48 @@ footer {
     color: #9090a0;
 }
 
+.card-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 15rem;
+    height: 25rem;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.card span {
+    font-size: 14px;
+}
+
+.card .fa-arrow-right {
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.card:hover .fa-arrow-right {
+    transform: translateX(10px);
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card i {
+    margin-right: 0.4rem;
+}
+
+
+
 @media (max-width: 480px) {
     .renovate-container {
         height: 20rem;
