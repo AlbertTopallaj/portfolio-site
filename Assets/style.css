@@ -16,6 +16,11 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
 .renovate-container {
     background-color: #f5a652;
     border-radius: 300px;
