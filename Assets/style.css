@@ -73,10 +73,11 @@ footer a:hover i {
 .card-section {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     animation: fadeInUp 0.5s ease 0.2s forwards;
     opacity: 0;
 }
+
 
 .card {
     display: flex;
@@ -118,6 +119,24 @@ footer a:hover i {
 .welcome-header {
     font-weight: 300;
     letter-spacing: 0.02em;
+}
+
+.fi {
+    font-size: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sweden-develop {
+    position: absolute;
+    right: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flag {
+    margin-left: auto;
 }
 
 @keyframes fadeInUp {
