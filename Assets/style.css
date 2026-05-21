@@ -73,6 +73,18 @@ footer {
     margin-right: 0.4rem;
 }
 
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.welcome-header {
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
 
 
 @media (max-width: 480px) {
