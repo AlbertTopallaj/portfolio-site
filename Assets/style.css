@@ -144,11 +144,63 @@ footer a:hover i {
     margin-top: 8rem;
 }
 
+.section-subject h1{
+    opacity: 0.8;
+    font-weight: 200;
+}
+
 .section-card {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 40rem;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.project-card.blurred {
+    filter: blur(3px);
+    user-select: none;
+    pointer-events: none;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.project-title {
+    font-weight: 300;
+    margin: 0;
+}
+
+.project-wrapper {
+    position: relative;
+    width: 40rem;
+}
+
+.coming-soon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    font-weight: 200;
+    font-size: 14px;
+    color: #2c2c3a;
+    pointer-events: none;
 }
 
 @keyframes fadeInUp {
