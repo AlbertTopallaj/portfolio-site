@@ -230,6 +230,40 @@ footer a:hover i {
     transform: translateY(-4px);
 }
 
+.aboutme-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 40rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.aboutme-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.aboutme-text h2 {
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+}
+
+.aboutme-text p {
+    font-size: 14px;
+    color: #9090a0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
