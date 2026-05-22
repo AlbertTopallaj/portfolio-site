@@ -1,3 +1,8 @@
+* {
+    max-width: 100%;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,6 +10,7 @@ html {
 
 body {
     background-color: #eeecea;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,10 +37,6 @@ a {
     padding: 2rem;
     height: 25rem;
     width: 25rem;
-}
-
-.name-header {
-    font-weight: 400;
 }
 
 footer {
@@ -114,6 +116,7 @@ footer a:hover i {
 }
 
 .welcome-header {
+    margin-top: 5rem;
     font-weight: 300;
     letter-spacing: 0.02em;
 }
@@ -161,11 +164,12 @@ footer a:hover i {
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
-    width: 40rem;
+    width: 100%;
     padding: 1.5rem 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     position: relative;
+    box-sizing: border-box;
 }
 
 .project-card.blurred {
@@ -188,7 +192,9 @@ footer a:hover i {
 
 .project-wrapper {
     position: relative;
-    width: 40rem;
+    width: 85%;
+    max-width: 40rem;
+    margin: 2rem auto 0;
 }
 
 .coming-soon {
@@ -235,11 +241,12 @@ footer a:hover i {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
-    width: 40rem;
+    width: min(70rem, 90vw);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     margin-top: 2rem;
+    margin-bottom: 4rem;
     text-align: left;
 }
 
@@ -275,11 +282,52 @@ footer a:hover i {
     }
 }
 
+@media (max-width: 768px){
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80vw;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .welcome-header {
+        margin-top: 5rem;
+        font-size: 1.4rem;
+        padding: 0 1.5rem;
+    }
+
+    .project-wrapper,
+    .project-card {
+        width: 85vw !important;
+    }
+
+    .coming-soon {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .aboutme-card {
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .aboutme-text {
+        text-align: center;
+    }
+
+    .sweden-develop {
+        font-size: 10px;
+    }
+}
 
 @media (max-width: 480px) {
-    .renovate-container {
-        height: 20rem;
-        width: 20rem;
-        padding: 1.5rem;
+    .sweden-develop {
+        display: none;
     }
 }
