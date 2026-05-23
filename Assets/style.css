@@ -73,18 +73,6 @@ a {
     color: #2c2c3a;
 }
 
-.renovate-container {
-    background-color: #f5a652;
-    border-radius: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    height: 25rem;
-    width: 25rem;
-}
-
 footer {
     display: flex;
     justify-content: center;
