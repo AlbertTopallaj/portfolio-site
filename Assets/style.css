@@ -378,6 +378,12 @@ textarea {
     background-color: #6dbb8a;
 }
 
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
 
 @keyframes fadeInUp {
     from {
