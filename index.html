@@ -25,6 +25,12 @@
   </head>
 
   <body>
+    <div class="internship-banner">
+      <span class="internship-dot"></span>
+      Söker aktivt LIA-plats inom systemutveckling
+      <a href="#aboutme-section">Läs mer om mig</a>
+    </div>
+
     <section class="welcome-section">
       <h1 class="welcome-header">Välkommen till Albert Topallajs Portfolio</h1>
     </section>
@@ -60,68 +66,63 @@
 
     <section class="section-subject" id="projects-section">
       <h1>Mina projekt</h1>
-        <div class="project-wrapper">
-          <div class="project-card blurred">
-            <i class="fa-solid fa-folder fa-xl"></i>
-            <div class="project-info">
-              <p class="project-title">Projektnamn</p>
-              <span>En kort beskrivning av projektet</span>
-            </div>
+      <div class="project-wrapper">
+        <div class="project-card blurred">
+          <i class="fa-solid fa-folder fa-xl"></i>
+          <div class="project-info">
+            <p class="project-title">Projektnamn</p>
+            <span>En kort beskrivning av projektet</span>
           </div>
-          <span class="coming-soon">Coming soon...</span>
         </div>
+        <span class="coming-soon">Coming soon...</span>
+      </div>
     </section>
 
     <section class="section-subject" id="knowledge-section">
       <h1>Mina kunskaper</h1>
       <div class="skills-container">
-
-      
         <div class="skill-category-card">
           <h3>Frontend</h3>
           <div class="skill-item">
-          <i class="devicon-html5-plain colored"></i><span>HTML</span>
-        </div>
-        <div class="skill-item">
-          <i class="devicon-css3-plain colored"></i><span>CSS</span>
-        </div>
-        <div class="skill-item">
-          <i class="devicon-javascript-plain colored"></i
-          ><span>JavaScript</span>
-        </div>
-           <div class="skill-item">
-          <i class="devicon-react-plain colored"></i><span>React</span>
-        </div>
+            <i class="devicon-html5-plain colored"></i><span>HTML</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-css3-plain colored"></i><span>CSS</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-javascript-plain colored"></i
+            ><span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-react-plain colored"></i><span>React</span>
+          </div>
         </div>
 
         <div class="skill-category-card">
           <h3>Backend</h3>
           <div class="skill-item">
-          <i class="devicon-java-plain colored"></i><span>Java</span>
-        </div>
-        <div class="skill-item">
-           <i class="devicon-spring-plain colored"></i><span>Spring Boot</span>
-        </div>
+            <i class="devicon-java-plain colored"></i><span>Java</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-spring-plain colored"></i><span>Spring Boot</span>
+          </div>
         </div>
 
         <div class="skill-category-card">
           <h3>Tools</h3>
           <div class="skill-item">
-        <i class="devicon-docker-plain colored"></i><span>Docker</span>
+            <i class="devicon-docker-plain colored"></i><span>Docker</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-git-plain colored"></i><span>Git</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-github-plain colored"></i><span>Github</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-vscode-plain colored"></i><span>VS Code</span>
+          </div>
         </div>
-        <div class="skill-item">
-           <i class="devicon-git-plain colored"></i><span>Git</span>
-        </div>
-        <div class="skill-item">
-               <i class="devicon-github-plain colored"></i><span>Github</span>
-        </div>
-              <div class="skill-item">
-           <i class="devicon-vscode-plain colored"></i
-          ><span>VS Code</span>
-        </div>
-
-        </div>
-      
       </div>
     </section>
 
@@ -136,11 +137,52 @@
         <div class="aboutme-text">
           <h2>Hej, jag är Albert</h2>
           <p>
-            Systemutvecklare med passion för att utveckla användarvänliga system. Jag utvecklar
-            system med techstacken Java, Springboot samt HTML, CSS och JavaScript
+            Systemutvecklare med passion för att utveckla användarvänliga
+            system. Jag utvecklar system med techstacken Java, Springboot samt
+            HTML, CSS och JavaScript
           </p>
         </div>
       </div>
+
+      <form class="contact-form" id="contact-form">
+        <h2>Kontakta mig</h2>
+        <div class="contact-field">
+          <label>Namn</label>
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Ditt namn"
+            required
+          />
+        </div>
+        <div class="contact-field">
+          <label>Företag</label>
+          <input type="text" name="company" placeholder="Ditt företag" />
+        </div>
+        <div class="contact-field">
+          <label>Mail</label>
+          <input
+            type="email"
+            name="from_email"
+            placeholder="din@mail.com"
+            required
+          />
+        </div>
+        <div class="contact-field">
+          <label>Meddelande</label>
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Skriv ditt meddelande"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="contact-btn">
+          <span id="btn-text">Skicka</span>
+        </button>
+
+        <p class="contact-status" id="contact-status"></p>
+      </form>
     </section>
 
     <footer>

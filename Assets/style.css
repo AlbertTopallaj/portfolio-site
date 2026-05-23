@@ -22,6 +22,51 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.internship-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f0faf4;
+    border-bottom: 1px solid #b7e5c8;
+    color: #2a7a4b;
+    font-size: 13px;
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    z-index: 999;
+}
+
+.internship-banner a {
+    color: #2a7a4b;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.internship-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6dbb8a;
+    flex-shrink: 0;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1; 
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(0.85);
+    }
+}
+
 a {
     text-decoration-line: none;
     color: #2c2c3a;
@@ -287,6 +332,51 @@ footer a:hover i {
     color: #9090a0;
     margin: 0;
     line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(40rem, 90vw);
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+.contact-form h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+input, textarea {
+    border: 1px solid #dddbd8;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+.contact-btn {
+    background-color: #2c2c3a;
+    color: #eeecea;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+    background-color: #6dbb8a;
 }
 
 
