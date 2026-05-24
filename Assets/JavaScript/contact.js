@@ -7,6 +7,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     const body = {
         name: document.getElementById('name').value,
         company: document.getElementById('company').value,
+        city: document.getElementById('city').value,
         email: document.getElementById('mail').value,
         message: document.getElementById('message').value
     };
