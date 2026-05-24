@@ -154,23 +154,25 @@
           <input
             type="text"
             name="from_name"
+            id="name"
             placeholder="Ditt namn"
             required
           />
         </div>
         <div class="contact-field">
           <label>Företag</label>
-          <input type="text" name="company" placeholder="Ditt företag" />
+          <input type="text" name="company" id="company" placeholder="Ditt företag" />
         </div>
           <div class="contact-field">
           <label>Stad</label>
-          <input type="text" name="city" placeholder="Ex. Stockholm, Katrineholm" />
+          <input type="text" id="city" name="city" placeholder="Ex. Stockholm, Katrineholm" />
         </div>
         <div class="contact-field">
           <label>Mail</label>
           <input
             type="email"
             name="from_email"
+            id="mail"
             placeholder="din@mail.com"
             required
           />
@@ -179,6 +181,7 @@
           <label>Meddelande</label>
           <textarea
             name="message"
+            id="message"
             rows="4"
             placeholder="Skriv ditt meddelande"
             required
@@ -203,5 +206,6 @@
     </footer>
 
     <script src="Assets/JavaScript/year.js"></script>
+    <script src="Assets/JavaScript/contact.js"></script>
   </body>
 </html>
