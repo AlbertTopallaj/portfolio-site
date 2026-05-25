@@ -251,27 +251,25 @@ footer a:hover i {
 }
 
 .skill-category-card {
-    flex: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    min-width: 10rem;
 }
 
 .skill-category-card h3 {
-    margin-top: 3rem;
-    width: 100%;
+    flex: 0 0 100%;
+    margin: 0;
     font-weight: 300;
     opacity: 0.6;
 }
 
 .skill-item {
+    margin-top: 0.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
